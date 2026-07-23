@@ -1,69 +1,483 @@
-Create a single-file modern portfolio website (index.html) using only HTML, CSS and JavaScript.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kumar | Portfolio</title>
 
-Requirements:
-- Keep ALL my existing information unchanged.
-- Use the uploaded resume as the source of truth for missing details.
-- Do not invent any information.
-- Create a premium recruiter-friendly portfolio.
+    <link rel="stylesheet" href="style.css">
 
-Sections:
-1. Sticky Navbar
-2. Hero
-3. About
-4. Education
-5. Technical Skills
-6. Projects
-7. Leadership Experience
-8. Achievements
-9. Coding Profiles
-10. Contact
-11. Footer
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-Design:
-- Dark theme
-- Glassmorphism cards
-- Animated gradient background
-- Smooth scrolling
-- Subtle fade-in animations
-- Hover effects
-- Responsive layout
-- Modern typography
-- Rounded cards
-- Blue accent color (#58A6FF)
-- No excessive animations
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-Projects:
-Smart Campus Event Management System
-Live Demo:
-https://smart-campus-system-hazel.vercel.app/
+</head>
+<body>
 
-GreenCart
-Live Demo:
-https://green-cart-two-psi.vercel.app/
+<!-- ================= NAVBAR ================= -->
 
-Machine Learning Projects
+<nav class="navbar">
 
-Coding Profiles:
-GitHub:
-https://github.com/harshkumar7822
+    <div class="logo">
+        Harsh Kumar
+    </div>
 
-LinkedIn:
-https://www.linkedin.com/in/harsh-kumar31/
+    <ul class="nav-links">
 
-LeetCode:
-https://leetcode.com/u/harshkumar31/
+        <li><a href="#home">Home</a></li>
 
-CodeChef:
-https://www.codechef.com/users/harshkumar31
+        <li><a href="#about">About</a></li>
 
-HackerRank:
-https://www.hackerrank.com/profile/harshkumar31
+        <li><a href="#education">Education</a></li>
 
-Use Font Awesome icons.
+        <li><a href="#skills">Skills</a></li>
 
-Include a Download Resume button.
+        <li><a href="#projects">Projects</a></li>
 
-Return ONLY one downloadable file:
-index.html
+        <li><a href="#leadership">Leadership</a></li>
 
-Do not split the code into multiple parts.
+        <li><a href="#achievements">Achievements</a></li>
+
+        <li><a href="#profiles">Profiles</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Hi 👋 I'm
+
+<span>Harsh Kumar</span>
+
+</h1>
+
+<h3 id="typing-text">
+
+Computer Science Engineering Student
+
+</h3>
+
+<p>
+
+MERN Stack Developer • Machine Learning Enthusiast
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="Harsh_Kumar_Resume.pdf"
+
+download
+
+class="btn">
+
+<i class="fa-solid fa-download"></i>
+
+Download Resume
+
+</a>
+
+<a href="https://github.com/harshkumar7822"
+
+target="_blank"
+
+class="btn btn-outline">
+
+<i class="fab fa-github"></i>
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+<div class="card">
+
+<p>
+
+🎓 B.Tech Computer Science Engineering Student
+
+<br><br>
+
+💻 Passionate about Full Stack Web Development using MERN Stack.
+
+<br><br>
+
+🌱 Currently Learning Next.js, TypeScript and AI Integration.
+
+<br><br>
+
+🤖 Interested in Machine Learning and Data Analysis.
+
+<br><br>
+
+🎯 Goal is to become a Software Development Engineer (SDE).
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<h2 class="section-title">
+
+Education
+
+</h2>
+
+<div class="card">
+
+<h3>
+
+ABESEC Engineering College
+
+</h3>
+
+<p>
+
+Bachelor of Technology
+
+<br>
+
+Computer Science & Engineering
+
+<br>
+
+2024 - 2028
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<h2 class="section-title">
+
+Technical Skills
+
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">HTML</div>
+
+<div class="skill-card">CSS</div>
+
+<div class="skill-card">JavaScript</div>
+
+<div class="skill-card">React.js</div>
+
+<div class="skill-card">Next.js</div>
+
+<div class="skill-card">Tailwind CSS</div>
+
+<div class="skill-card">Node.js</div>
+
+<div class="skill-card">Express.js</div>
+
+<div class="skill-card">MongoDB</div>
+
+<div class="skill-card">MySQL</div>
+
+<div class="skill-card">Git</div>
+
+<div class="skill-card">GitHub</div>
+
+<div class="skill-card">Java</div>
+
+<div class="skill-card">Python</div>
+
+<div class="skill-card">C++</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<h2 class="section-title">
+
+Projects
+
+</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>
+
+🎉 Smart Campus Event Management System
+
+</h3>
+
+<p>
+
+MERN Stack application with JWT Authentication,
+
+Role Based Access,
+
+Admin Dashboard and Event Management.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="https://smart-campus-system-hazel.vercel.app/"
+
+target="_blank"
+
+class="project-btn">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>
+
+🛒 GreenCart
+
+</h3>
+
+<p>
+
+Full Stack E-commerce website using
+
+React,
+
+Node.js,
+
+Express and MongoDB.
+
+</p>
+
+<div class="project-buttons">
+
+<a href="https://green-cart-two-psi.vercel.app/"
+
+target="_blank"
+
+class="project-btn">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>
+
+🤖 Machine Learning Projects
+
+</h3>
+
+<p>
+
+Student Performance Prediction,
+
+Loan Prediction,
+
+Insurance Prediction,
+
+Data Analysis using Python.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LEADERSHIP ================= -->
+
+<section id="leadership">
+
+<h2 class="section-title">
+
+Leadership Experience
+
+</h2>
+
+<div class="card">
+
+<h3>
+
+Team Lead
+
+</h3>
+
+<p>
+
+Led an AI Image Generation Application project by coordinating planning, development and implementation.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements">
+
+<h2 class="section-title">
+
+Achievements
+
+</h2>
+
+<div class="card">
+
+<p>
+
+🏆 Highest CodeChef Rating : 1352
+
+<br><br>
+
+⭐ Current Rating : 1266
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= CODING PROFILES ================= -->
+
+<section id="profiles">
+
+<h2 class="section-title">
+
+Coding Profiles
+
+</h2>
+
+<div class="profile-links">
+
+<a href="https://github.com/harshkumar7822" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+
+<a href="https://www.linkedin.com/in/harsh-kumar31/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+
+<a href="https://leetcode.com/u/harshkumar31/" target="_blank">LeetCode</a>
+
+<a href="https://www.codechef.com/users/harshkumar31" target="_blank">CodeChef</a>
+
+<a href="https://www.hackerrank.com/profile/harshkumar31" target="_blank">HackerRank</a>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact
+
+</h2>
+
+<div class="card">
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+Email :
+
+<a href="mailto:harshkumarvashist@gmail.com">
+
+harshkumarvashist@gmail.com
+
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
+Phone :
+
+<a href="tel:+919761672081">
+
++91 9761672081
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Harsh Kumar
+
+<br>
+
+Made with ❤️ using HTML, CSS & JavaScript
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
